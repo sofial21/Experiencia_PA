@@ -8,6 +8,7 @@ def adivinar_par_o_impar():
     import random
     print("Debes ingresar Par o Impar")
     solucion = input()
+    solucion = str(solucion)
     numero = random.randint(1, 500)
     if numero % 2 == 0:
         respuesta = "Par"
