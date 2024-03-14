@@ -9,13 +9,12 @@ def memoria():
     secuencia = []
     for i in range(10):
         numero = random.randint(0,101)
-        secuencia = secuencia.append(numero) 
+        secuencia.append(numero) 
         print(numero)
     
     for i in secuencia:
         ingresar = input('Ingresa un número: ')
         if ingresar != i:
-            return("Fallaste")
+            print("Fallaste")
     
-    return("Ganaste")
             
