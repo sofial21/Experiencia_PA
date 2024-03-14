@@ -21,25 +21,23 @@ def juego_del_dado():
         print("Puntaje jugador: " + str(puntuacion_usuario))
         print("Puntaje computador: " + str(puntuacion_computador))
         print("Juego continua ... ")
-
-        if puntuacion_usuario >= 30 and puntuacion_computador >= 30:
+        
+        if puntuacion_usuario >= 30:
             print("Puntaje jugador" + str(lanzamiento))
             print("Puntaje computador" + str(lanzamiento_computador))            
             juego = False
             print("Juego terminado ... ")
-            print('Empate!')
-        
-        else:
-            if puntuacion_usuario >= 30:
-                print("Puntaje jugador" + str(lanzamiento))
-                print("Puntaje computador" + str(lanzamiento_computador))            
-                juego = False
-                print("Juego terminado ... ")
+            if puntuacion_usuario >= 30 and puntuacion_computador >= 30:
+                print('Empate!')
+            else:
                 print('Ganaste!')
 
-            if puntuacion_computador >= 30:
-                print("Puntaje jugador" + str(lanzamiento))
-                print("Puntaje computador" + str(lanzamiento_computador))
-                juego = False
-                print("Juego terminado ... ")
+        if puntuacion_computador >= 30:
+            print("Puntaje jugador" + str(lanzamiento))
+            print("Puntaje computador" + str(lanzamiento_computador))
+            juego = False
+            print("Juego terminado ... ")
+            if puntuacion_usuario >= 30 and puntuacion_computador >= 30:
+                print('Empate!')
+            else:
                 print('Perdiste :(')
