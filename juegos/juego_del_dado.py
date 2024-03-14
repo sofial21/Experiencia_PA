@@ -13,11 +13,13 @@ def juego_del_dado():
         print("Debes apretar enter para lanzar el dado")
         inicio = input() # representa que aprete enter
         lanzamiento = random.randint(1,7)
+        print(f'Te salió un {lanzamiento}')
         puntuacion_usuario += lanzamiento
         lanzamiento_computador = random.randint(1,7)
+        print(f'El computador lanzó un {lanzamiento_computador}')
         puntuacion_computador += lanzamiento_computador
-        print("Puntaje jugador: " + str(lanzamiento))
-        print("Puntaje computador: " + str(lanzamiento_computador))
+        print("Puntaje jugador: " + str(puntuacion_usuario))
+        print("Puntaje computador: " + str(puntuacion_computador))
         print("Juego continua ... ")
 
         if puntuacion_usuario >= 30:
