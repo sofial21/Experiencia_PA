@@ -19,14 +19,14 @@ def juego_del_dado():
         print("Puntaje juagor" + str(lanzamiento))
         print("Puntaje computador" + str(lanzamiento_computador))
         print("Juego continua ... ")
-        if lanzamiento == 30:
-            print("Puntaje juagor" + str(lanzamiento))
+        if lanzamiento >= 30:
+            print("Puntaje jugador" + str(lanzamiento))
             print("Puntaje computador" + str(lanzamiento_computador))            
             juego = False
             print("Juego terminado ... ")
 
-        if lanzamiento_computador == 30:
-            print("Puntaje juagor" + str(lanzamiento))
+        if lanzamiento_computador >= 30:
+            print("Puntaje jugador" + str(lanzamiento))
             print("Puntaje computador" + str(lanzamiento_computador))
             juego = False
             print("Juego terminado ... ")
