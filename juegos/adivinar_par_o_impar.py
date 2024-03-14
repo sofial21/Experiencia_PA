@@ -15,7 +15,7 @@ def adivinar_par_o_impar():
     else :
         respuesta = "Impar"
     if respuesta == solucion :
-        return("Adivinaste correctamente")
+        print("Adivinaste correctamente")
     else:
-        return("Respuesta incorrecta")
+        print("Respuesta incorrecta")
     
