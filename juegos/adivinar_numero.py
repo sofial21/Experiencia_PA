@@ -7,7 +7,7 @@ def adivinar_numero():
     Se debe mostrar un mensaje si el usuario adivina correctamente o no.
     """
     numero = random.randint(1, 11)
-    entrada = int(input('Elija un número entre 1 y 10'))
+    entrada = int(input('Elija un número entre 1 y 10: '))
     if entrada == numero:
         print('Felicitaciones! Adivinaste')
     else:
