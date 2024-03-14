@@ -12,7 +12,7 @@ def cachipun():
     while sigue:
         opcion = input()
         computadora = random.choice(opciones)
-        print(f'La computadora eligió {computadora})
+        print(f'La computadora eligió {computadora}')
         if opcion != computadora:
             sigue = False
             if opcion == "tijera" and computadora == "papel":
