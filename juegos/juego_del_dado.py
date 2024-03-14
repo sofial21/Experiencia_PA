@@ -5,4 +5,20 @@ def juego_del_dado():
     Después el computador también tiene que lanzar un dado.
     El primero en sumar 30 puntos gana.
     """
-    pass
+    import random
+    puntuacion_usuario = 0
+    puntuacion_computador = 0
+    juego = True 
+    while juego: 
+        print("Debes apretar enter para lanzar el dado")
+        # Como conectar enter al lanzamiento
+        lanzamiento = random.randint(1,7)
+        puntuacion_usuario += lanzamiento
+        lanzamiento_computador = random.randint(1,7)
+        puntuacion_computador += lanzamiento_computador
+        if lanzamiento == 30:
+            juego = False
+        if lanzamiento_computador == 30:
+            juego = False
+        
+    
