@@ -15,6 +15,7 @@ def memoria():
     for i in secuencia:
         ingresar = int(input('Ingresa un número: '))
         if ingresar != i:
-            print("Fallaste")
+            return("Fallaste")
+    return("Acertaste")
     
             
