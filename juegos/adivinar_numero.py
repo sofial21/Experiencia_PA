@@ -11,4 +11,4 @@ def adivinar_numero():
     if entrada == numero:
         print('Felicitaciones! Adivinaste')
     else:
-        print('No has adivinado :()')
+        print('No has adivinado :(')
