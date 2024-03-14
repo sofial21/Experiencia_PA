@@ -11,7 +11,7 @@ def juego_del_dado():
     juego = True 
     while juego: 
         print("Debes apretar enter para lanzar el dado")
-        # Como conectar enter al lanzamiento
+        inicio = input() # representa que aprete enter
         lanzamiento = random.randint(1,7)
         puntuacion_usuario += lanzamiento
         lanzamiento_computador = random.randint(1,7)
