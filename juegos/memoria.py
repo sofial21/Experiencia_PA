@@ -17,6 +17,7 @@ def memoria():
         if ingresar != i:
             print("Fallastee")
             return("Fallaste")
+    print("Acertastee")
     return("Acertaste")
     
             
