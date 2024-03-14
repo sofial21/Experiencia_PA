@@ -6,8 +6,9 @@ def adivinar_par_o_impar():
     Se debe mostrar si el usuario adivina correctamente o no.
     """
     import random
+    print("Debes ingresar Par o Impar")
     solucion = input()
-    numero = random.randint()
+    numero = random.randint(1, 500)
     if numero % 2 == 0:
         respuesta = Par
     else :
