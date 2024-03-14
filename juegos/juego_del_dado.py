@@ -16,11 +16,17 @@ def juego_del_dado():
         puntuacion_usuario += lanzamiento
         lanzamiento_computador = random.randint(1,7)
         puntuacion_computador += lanzamiento_computador
-        print(lanzamiento)
-        print(lanzamiento_computador)
+        print("Puntaje juagor" + str(lanzamiento))
+        print("Puntaje computador" + str(lanzamiento_computador))
         print("Juego continua ... ")
         if lanzamiento == 30:
+            print("Puntaje juagor" + str(lanzamiento))
+            print("Puntaje computador" + str(lanzamiento_computador))            
             juego = False
+            print("Juego terminado ... ")
+
         if lanzamiento_computador == 30:
+            print("Puntaje juagor" + str(lanzamiento))
+            print("Puntaje computador" + str(lanzamiento_computador))
             juego = False
-    
+            print("Juego terminado ... ")
