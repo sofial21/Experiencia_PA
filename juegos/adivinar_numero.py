@@ -8,6 +8,7 @@ def adivinar_numero():
     """
     numero = random.randint(1, 11)
     entrada = int(input('Elija un número entre 1 y 10: '))
+    print(f'El número es el {numero}')
     if entrada == numero:
         print('Felicitaciones! Adivinaste')
     else:
