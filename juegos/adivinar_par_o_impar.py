@@ -10,9 +10,9 @@ def adivinar_par_o_impar():
     solucion = input()
     numero = random.randint(1, 500)
     if numero % 2 == 0:
-        respuesta = Par
+        respuesta = "Par"
     else :
-        respuesta = Impar
+        respuesta = "Impar"
     if respuesta == solucion :
         return("Adivinaste correctamente")
     else:
